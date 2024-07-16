@@ -1,0 +1,163 @@
+//Variables
+$white20: #dadada;
+$primary100: #347073;
+$primary25: #d5d9d9;
+$black80: #646464;
+$black20: #d2d2d2;
+$black60: #9b9b9b;
+
+//Style
+.upload-files {
+    display: flex;
+    flex-direction: column;
+    color: $black80;
+    .borderinputfile {
+        border: 2px dashed $white20;
+
+        &.active{
+            border: 2px dashed $primary100;
+            background-color: $primary25;
+        }
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10rem;
+        border-radius: 8px;
+
+        .structure {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            height: 10rem;
+
+            
+
+            .svg {
+                fill: $black80;
+                width: 28px;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            .btnfileinput {
+                font-weight: 700;
+                span {
+                    font-size: 14px;
+                    font-weight: 700;
+
+                    line-height: 20px;
+                    color: $primary100;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .progressbase {
+        display: flex;
+        flex-direction: column;
+
+        .progressbaseelement {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $black20;
+            background-color: #fff;
+            border-radius: 8px;
+
+            .progress-content {
+                padding: 22px 16px;
+                display: flex;
+                .material-icons-round {
+                    color: $black80;
+                    font-size: 30px;
+                }
+
+                .data-structure {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .divdata {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 16px;
+                        justify-content: space-between;
+                        min-width: 32px;
+
+                        .order-2 {
+                            color: $black60;
+                        }
+                    }
+                    .divbutton {
+                        display: flex;
+                        flex-direction: column;
+                        align-self: center;
+                        button {
+                            padding: 0px;
+                            border: none;
+                            outline: none;
+                            height: 24px;
+                            background-color: transparent;
+                            .material-icons-round {
+                                font-size: 24px;
+                                cursor: pointer;
+                                color: $black80;
+                            }
+                        }
+
+                        .progressbar--text {
+                            color: $black20;
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+            .displayprogress {
+                margin-top: 16px;
+            }
+
+            &.active {
+                border: 1px solid $black20;
+                .progress-content {
+                    display: flex;
+                    .material-icons-round {
+                        color: $primary100;
+                    }
+                }
+                .data-structure {
+                    .divbutton {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        button {
+                            .material-icons-round {
+                                color: $black80;
+                            }
+                        }
+
+                        .progressbar--text {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+
+        .third-button {
+            margin-right: 72px;
+        }
+    }
+}

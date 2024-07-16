@@ -14,11 +14,9 @@
 ## Component Steps
 
 <ul>
-
     <li> Set your own props </li>
     <li> Set your Url to send data </li>
     <li> Import your own store </li>
-
 </ul>
 
 ## Install
